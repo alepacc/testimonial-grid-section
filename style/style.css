@@ -9,10 +9,15 @@
 body {
   font-size: 13px;
   font-family: "Barlow Semi Condensed", sans-serif;
+  background-color: hsl(214, 17%, 92%);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  width: 100%;
+  width: 400px;
   max-width: 1440px;
   margin: 0 auto;
   padding: 50px 25px;
@@ -24,17 +29,97 @@ body {
 }
 
 .card {
-  background-color: hsl(263, 55%, 52%);
   border-radius: 10px;
-  padding: 20px;
-  color: hsl(0, 0%, 100%);
+  padding: 35px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  gap: 25px;
+  gap: 15px;
+  box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.1);
 }
 .card__image {
   border-radius: 50px;
+  width: 50px;
+  border: 2px solid;
+}
+.card__detail {
+  font-size: 14px;
+  opacity: 0.5;
+}
+.card__name {
+  opacity: 0.8;
+}
+.card__text {
+  opacity: 0.8;
+}
+
+.card:nth-child(1) {
+  background-color: hsl(263, 55%, 52%);
+  color: hsl(0, 0%, 81%);
+}
+.card:nth-child(1) h1 {
+  color: hsl(0, 0%, 100%);
+}
+.card:nth-child(1) .card__image {
+  border-color: hsl(264, 82%, 80%);
+}
+
+.card:nth-child(2) {
+  background-color: hsl(217, 19%, 35%);
+  color: hsl(214, 17%, 92%);
+}
+
+.card:nth-child(3),
+.card:nth-child(5) {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(217, 19%, 35%);
+}
+.card:nth-child(3) h1,
+.card:nth-child(5) h1 {
+  color: hsl(217, 19%, 35%);
+}
+.card:nth-child(3) .card__image,
+.card:nth-child(5) .card__image {
+  border-color: hsl(0, 0%, 100%);
+}
+
+.card:nth-child(4) {
+  background-color: hsl(219, 29%, 14%);
+  color: hsl(0, 0%, 81%);
+}
+.card:nth-child(4) .card__image {
+  border-color: hsl(263, 55%, 52%);
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    align-items: stretch;
+    gap: 25px;
+    padding: 50px 100px;
+  }
+  .card:nth-child(1) {
+    background-image: url("/images/bg-pattern-quotation.svg");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: 200px;
+    grid-column: span 2;
+  }
+  .card:nth-child(3) {
+    grid-row: 2;
+    grid-column: 1;
+  }
+  .card:nth-child(4) {
+    grid-row: 2;
+    grid-column: span 2;
+  }
+  .card:nth-child(5) {
+    grid-row: span 2;
+    grid-column: 4;
+  }
 }/*# sourceMappingURL=style.css.map */
