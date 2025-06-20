@@ -125,12 +125,12 @@ body{
         padding: 50px 100px;    
     }
 
-     .card:nth-child(1){
-        background-image: url("/images/bg-pattern-quotation.svg");
-        background-repeat: no-repeat;
-        background-position: top right;
-        background-size: 200px;
-        grid-column: span 2;
+    .card:nth-child(1){
+       background-image: url("/images/bg-pattern-quotation.svg");
+       background-repeat: no-repeat;
+       background-position: top right;
+       background-size: 200px;
+       grid-column: span 2;
     }
     .card:nth-child(3){
         grid-row: 2;
