@@ -102,6 +102,7 @@ body {
     align-items: stretch;
     gap: 25px;
     padding: 50px 100px;
+    margin: 0;
   }
   .card:nth-child(1) {
     background-image: url("/images/bg-pattern-quotation.svg");

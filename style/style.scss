@@ -122,7 +122,8 @@ body{
         grid-template-rows: repeat(2, 1fr);
         align-items: stretch;
         gap: 25px;
-        padding: 50px 100px;    
+        padding: 50px 100px;  
+        margin:0;  
     }
 
     .card:nth-child(1){
