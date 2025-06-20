@@ -50,17 +50,15 @@ body{
 
 
 .card{
-    // background-color: $purple-500;
     border-radius: 10px;
     padding: 35px;
-    // color: $white;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
     gap: 15px;
-    box-shadow: 20px 20px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 20px 20px 20px 0px $grey-200;
 
     &__image {
         border-radius:50px;
@@ -117,9 +115,8 @@ body{
 
 // breakpoints desktop
 @media screen and (min-width: $desktop) {   
-    // grid position
     .container {
-        width: 100% ;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
